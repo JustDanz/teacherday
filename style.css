@@ -1,0 +1,208 @@
+/* Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #vanta-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .hero {
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+    background: linear-gradient(45deg, #2e3b4e, #1b2735);
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .hero button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    border: none;
+    background-color: #ff6f61;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .about {
+    background-color: #f9f9f9;
+  }
+
+  .about-card {
+    margin-bottom: 30px;
+  }
+
+  .about-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+    }
+
+    .hero button {
+      padding: 12px 25px;
+      font-size: 0.9rem;
+    }
+  }
+
+.hero button:hover {
+    background-color: #ff9a8b;
+}
+
+/* About Section Styles */
+.about {
+    background-color: #f4f4f9;
+    color: #333;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ff6f61;
+}
+
+.about .lead {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.about-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.about-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.gallery {
+    background-color: #f4f4f9;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .gallery h2 {
+    font-size: 2.5rem;
+    color: #ff6600;
+  }
+
+  .gallery .img-fluid {
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .gallery .img-fluid:hover {
+    transform: scale(1.1) rotateY(10deg) rotateX(10deg);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  }
+
+  .gallery .gallery-item {
+    perspective: 1500px;
+    overflow: hidden;
+  }
+
+  .gallery .gallery-item img {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .gallery .gallery-item:hover img {
+    transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+  }
+
+  #zoom-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+
+  #zoom-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+/* Footer Styles */
+footer {
+    background-color: #1f2a35;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
